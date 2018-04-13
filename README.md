@@ -7,10 +7,10 @@ If not installed, download and install the aws-cli for your platform
 https://docs.aws.amazon.com/cli/latest/userguide/awscli-install-bundle.html
 
 ## Get a list of all security groups 
-(default region)
+(default region)<br>
 aws ec2 describe-security-groups --query 'SecurityGroups[*].GroupId'  --output text | tr '\t' '\n'
 
-(specific region)
+(specific region)<br>
 aws ec2 describe-security-groups --query 'SecurityGroups[*].GroupId' --region us-east-1  --output text | tr '\t' '\n'
 
 ## List all unused security groups
