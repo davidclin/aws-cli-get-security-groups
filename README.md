@@ -6,6 +6,9 @@ You already have all the necessary credentials to access EC2 services and have A
 If not installed, download and install the aws-cli for your platform
 https://docs.aws.amazon.com/cli/latest/userguide/awscli-install-bundle.html
 
+## Usage
+Copy/paste command examples provided below in Linux shell.
+
 ## Get a list of all security groups 
 (default region)<br>
 aws ec2 describe-security-groups --query 'SecurityGroups[*].GroupId'  --output text | tr '\t' '\n'
